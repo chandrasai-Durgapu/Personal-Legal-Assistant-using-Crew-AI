@@ -30,4 +30,20 @@ CREW_AI_API_KEY=your_crew_ai_api_key
 python main.py
 ```
 ---
+## Core Components
 
+agents/: Contains the definitions of various AI agents responsible for different tasks within the legal assistance process.
+
+tasks/: Houses the task definitions that agents will execute, outlining specific objectives and workflows.
+
+tools/: Includes utility functions and tools that support the agents and tasks.
+
+app.py: Serves as the main application entry point, initializing and managing the execution of agents and tasks.
+
+crew.py: Defines the coordination logic for the AI agents, ensuring they work together effectively.
+
+main.py: Acts as the script to launch the application, setting up necessary configurations and starting the agent workflows.
+
+requirements.txt: Lists all the Python dependencies required to run the project.
+
+README.md: Provides an overview of the project, setup instructions, and usage guidelines.
