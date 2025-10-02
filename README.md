@@ -22,7 +22,11 @@ pip install -r requirements.txt
 
 Create a .env file in the root directory and add the necessary environment variables:
 ```bash
-CREW_AI_API_KEY=your_crew_ai_api_key
+GROQ_API_KEY=your_groq_api_key_here
+TAVILY_API_KEY=your_tavily_api_key_here
+IPC_JSON_PATH=/full/path/to/ipc.json
+PERSIST_DIRECTORY_PATH=/full/path/to/persist_dir
+IPC_COLLECTION_NAME=your_ipc_collection_name
 ```
 ---
 ## Run the Assistant
