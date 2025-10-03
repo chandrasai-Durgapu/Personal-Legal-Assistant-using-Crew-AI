@@ -30,38 +30,42 @@ This project leverages the following technologies:
 ```bash
 git clone https://github.com/chandrasai-Durgapu/Personal-Legal-Assistant-using-Crew-AI.git
 cd Personal-Legal-Assistant-using-Crew-AI
+```
 2. Create & Activate Virtual Environment
 bash
-Copy code
+```bash
 python3 -m venv venv
+```
+```bash
 source venv/bin/activate    # Windows: venv\Scripts\activate
+```
 3. Install Dependencies
-bash
-Copy code
+```bash
 pip install -r requirements.txt
+```
 4. Configure Environment Variables
 Create a .env file in the root directory with the following variables:
 
 env
-Copy code
+```bash
 OPENAI_API_KEY=<your_openai_api_key>
 GROQ_API_KEY=<your_groq_api_key>
 TAVILY_API_KEY=<your_tavily_api_key>
 IPC_JSON_PATH=<your_ipc_json_path>
 PERSIST_DIRECTORY_PATH=<persist_directory_path_for_vector_store>
 IPC_COLLECTION_NAME=<ipc_collection_name>
+```
 Example values (replace with your actual paths and keys):
 env
-Copy code
-# IPC_JSON_PATH="D:/work/2_yt_pycharm/code_prep/ai-legal-assistant-crewai/ipc.json"
-# PERSIST_DIRECTORY_PATH="D:/work/2_yt_pycharm/code_prep/ai-legal-assistant-crewai/chroma_vectordb"
+# IPC_JSON_PATH="your-path"
+# PERSIST_DIRECTORY_PATH="your-path"
 # IPC_COLLECTION_NAME="ipc_collection"
 Make sure your application loads these variables properly, for example using python-dotenv.
 
 5. Run the Application
-bash
-Copy code
+```bash
 streamlit run app.py
+```
 Then open your browser at the indicated URL (usually localhost:8501).
 
 🧩 Agent Architecture & Workflow
@@ -92,51 +96,8 @@ MIT License — see the LICENSE file.
 Chandrasai Durgapu
 GitHub: @chandrasai-Durgapu
 
-vbnet
-Copy code
-
-If you want me to add or tweak anything else, just say!
 
 
-
-Get smarter responses, upload files and images, and more.
-
-Log in
-
-Sign up for free
-
-## Clone the Repository
-```bash
-git clone https://github.com/chandrasai-Durgapu/Personal-Legal-Assistant-using-Crew-AI.git
-cd Personal-Legal-Assistant-using-Crew-AI
-```
----
-## Set Up Virtual Environment
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-```
----
-## Install Dependencies
-```bash
-pip install -r requirements.txt
-```
----
-## Set Up Environment Variables
-
-Create a .env file in the root directory and add the necessary environment variables:
-```bash
-GROQ_API_KEY=your_groq_api_key_here
-TAVILY_API_KEY=your_tavily_api_key_here
-IPC_JSON_PATH=/full/path/to/ipc.json
-PERSIST_DIRECTORY_PATH=/full/path/to/persist_dir
-IPC_COLLECTION_NAME=your_ipc_collection_name
-```
----
-## Run the Assistant
-```bash
-python main.py
-```
 ---
 ## Core Components
 
